@@ -21,3 +21,13 @@ npx react-native init AwesomeTSProject --template react-native-template-typescri
 
 npx react-native start /
 npx react-native run-android /
+
+
+how to get database?
+adb pull /data/data/APPLICATION_ID/files/ .
+adb pull /data/data/com.awesomeproject/files/ .
+adb pull /data/data/com.awesomeproject/files/default.realm .
+
+//finally its worked
+APPLICATION_ID=com.awesomeproject
+adb shell "run-as com.awesomeproject cat /data/data/com.example.test/files/default.realm" > default.realm
