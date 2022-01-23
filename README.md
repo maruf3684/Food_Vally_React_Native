@@ -13,3 +13,11 @@ adb start-server/
 adb connect <YOUR_PHONE_IP>/ 
 adb devices/ 
 adb connect 192.168.0.2:5555/ 
+
+
+npx react-native init AwesomeProject / 
+npx react-native init AwesomeTSProject --template react-native-template-typescript / 
+
+
+npx react-native start /
+npx react-native run-android /
